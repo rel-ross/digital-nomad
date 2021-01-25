@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container-with-background {
+    background-image: url("./assets/RMNP-background.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    margin: -10px;
+}
+
+.logo {
+    width: 455px;
+}
+
+.homepage-search {
+   padding: 48px 0px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.homepage-search #search_word {
+    align-self: center;
+    height: 26px;
+    width: 50em;
+    border-radius: 10px 0px 0px 10px;
+    text-align: left;
+    padding: 10px;
+    margin: 10px 0px;
+    border-right: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.homepage-search #homepage-search-submit {
+    border-radius: 0px 10px 10px 0px;
+    height: 50px;
+    width: 50px;
+    /* padding: 10px; */
+    margin: 10px 0px;
+    background-color: #ECC51B;
+    border-left: none;
+}
+.search-icon {
+    background-image: url("assets/icons/magnifying-glass-03.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}

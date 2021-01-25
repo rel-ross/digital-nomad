@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="main.css">
     <title>Digital Nomad CO Parks</title>
 </head>
-<body>
-    <h1>Campsites</h1>
-    <ul id="campsites-list"></ul>
-  
-    <script src="app.js"></script>
-</body>
+    <body>
+        <div class="container-with-background">
+            <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
+            <form class="homepage-search" method="GET" action="parks.html">
+                <input type="text" id="search_word" placeholder="Search park by name to work from the wilderness">
+                <button type="submit" id="homepage-search-submit" value="submit">
+                    <span class="search-icon"></span>
+            </form>
+        </div>
+    </body>
 </html>
