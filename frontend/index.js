@@ -4,7 +4,7 @@ const overlay = document.getElementById('overlay');
 
 openModalButtons.forEach( button => {
    button.addEventListener('click', () => {
-      const modal = document.querySelector('button.dataset.modalTarget')
+      const openmodal = document.querySelector('#open-modal')
       openModal(modal)
    })
 })
@@ -18,7 +18,7 @@ openModalButtons.forEach( button => {
 
 closeModalButtons.forEach(button => {
    button.addEventListener('click', () => {
-      const modal = button.closest('modal')
+      const closemodal = button.closest('modal')
       closeModal(modal)
    })
 });
