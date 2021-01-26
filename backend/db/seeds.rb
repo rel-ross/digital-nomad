@@ -5,9 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'rest-client'
-require 'json'
-
 Favorite.destroy_all
 User.destroy_all
 Campsite.destroy_all 
@@ -17,12 +14,12 @@ result = JSON.parse response
 sites = result["data"]
 
 sites.each do |site|
-Campsite.create(
-    name: site["name"], 
-    url: site["reservationUrl"], 
-    cellPhoneReception: site["amenities"]["cellPhoneReception"],
-    showers: site["amenities"]["showers"][0],
-    electricalHookups: (site["campsites"]["electricalHookups"]).to_i,
-    location: site["addresses"][0]
+    Campsite.create(
+        name: site["name"], 
+        url: site["reservationUrl"], 
+        cellPhoneReception: site["amenities"]["cellPhoneReception"],
+        showers: site["amenities"]["showers"][0],
+        electricalHookups: (site["campsites"]["electricalHookups"]).to_i,
+        location: (site["addresses"].map {|address| address["city"]}).uniq
     )
 end
