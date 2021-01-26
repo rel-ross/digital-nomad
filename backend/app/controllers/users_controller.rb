@@ -15,13 +15,20 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    @user = User.new(user_params)
+   if
+    @user = User.create(name: params[:name],
+    password: params[:password])
+   
+      redirect_to "http://localhost:3001/campsites.html"
+   else
+      redirect_to "http://localhost:3001/"
+   end
 
-    if @user.save
-      render json: @user, status: :created, location: @user
-    else
-      render json: @user.errors, status: :unprocessable_entity
-    end
+
+
+   #  if @user.save
+   #    render json: @user, status: :created, location: @user
+   #  else
   end
 
   # PATCH/PUT /users/1
@@ -39,9 +46,9 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
+    def user_params
+      
+      # @user = User.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
