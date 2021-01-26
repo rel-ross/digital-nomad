@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="./index.js" defer></script>
     <title>Digital Nomad CO Parks</title>
 </head>
-    <body>
-        <div class="container-with-background">
-            <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
+
+   <body>
+      
+      <div class="container-with-background">
+         <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
             <form class="homepage-search" method="GET" action="parks.html">
-                <input type="text" id="search_word" placeholder="Search park by name to work from the wilderness">
-                <button type="submit" id="homepage-search-submit" value="submit">
-                    <span class="search-icon"></span>
+               <input type="text" id="search_word" placeholder="Search park by name to work from the wilderness">
+               <button type="submit" id="homepage-search-submit" value="submit">
+                  <span class="search-icon"></span>
             </form>
-        </div>
-
-        <form id="user-signup" action="http://localhost:3000/users" method="POST">
-         <label for="name">Email:</label>
-         <input type="text" name="name" id="user">
-
-         <label for="password">Pasword:</label>
-         <input type="text" name="password" id="password">
+      </div>
 
 
-         <input type="submit" name="submit">
-      </form>
-         
-
-
-
-
-
+      <button data-modal-target="#modal" id="modal">Open Modal</button>
+         <div id="modal" class="modal">
+            <div class="modal-header">
+               <div class="title">Example Modal</div>
+               <button data-close-button class="close-button">&times;</button>
+               </div>
+            
+               <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut soluta iusto perspiciatis nulla voluptatum, totam
+                  perferendis autem est quasi quas eveniet, tenetur distinctio dolor? Expedita, iusto. Pariatur ut explicabo
+                  exercitationem eaque consequatur! Incidunt debitis illo inventore saepe illum ullam ipsum quisquam similique est
+                  quod
+                  distinctio beatae laborum magnam omnis exercitationem facilis odit dignissimos officiis, natus eaque animi non,
+                  molestias qui! Nostrum consectetur dolores quaerat, doloribus, et reprehenderit rem aspernatur perferendis in
+                  consequuntur nulla saepe, earum molestias libero nobis ratione ex molestiae sunt quisquam labore explicabo
+                  repellendus. Eos alias aspernatur quas placeat autem, iusto sapiente, dolorem, unde impedit recusandae
+                  perspiciatis
+                  dicta.
+               </div>
+            </div>
+        <div id="overlay"></div>
     </body>
 </html>
