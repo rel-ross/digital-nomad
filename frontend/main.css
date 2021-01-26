@@ -27,7 +27,7 @@ body {
     /* flex-direction: column; */
 }
 
-.homepage-search #search_word {
+.homepage-search #search_term {
     align-self: center;
     height: 26px;
     width: 50em;
