@@ -3,10 +3,12 @@ fetch("https://developer.nps.gov/api/v1/campgrounds?stateCode=CO&api_key=bmY7DkU
     .then(response => response.json())
     .then(sites => {
         sites.data.map(site => {
+            console.log(site)
             let $campsiteLI = document.createElement("li")
             $campsiteLI.innerHTML = `
             <h1>Campground Name: ${site.name}</h1>
             <h3>Cellphone reception? ${site.amenities.cellPhoneReception}</h3>
+
             `
             return $campsiteLI
         }).forEach($campsiteLI => $campsitesList.append($campsiteLI))

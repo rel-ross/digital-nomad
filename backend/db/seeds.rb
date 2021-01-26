@@ -20,6 +20,6 @@ sites.each do |site|
         cellPhoneReception: site["amenities"]["cellPhoneReception"],
         showers: site["amenities"]["showers"][0],
         electricalHookups: (site["campsites"]["electricalHookups"]).to_i,
-        location: (site["addresses"].map {|address| address["city"]}).uniq
+        location: (site["addresses"].map {|address| address["city"]}).uniq.join()
     )
 end
