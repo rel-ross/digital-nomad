@@ -8,16 +8,15 @@
     <title>Digital Nomad CO Parks</title>
 </head>
 
-   <body>
-      
-      <div class="container-with-background">
-         <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
-            <form class="homepage-search" method="GET" action="parks.html">
-               <input type="text" id="search_word" placeholder="Search park by name to work from the wilderness">
-               <button type="submit" id="homepage-search-submit" value="submit">
-                  <span class="search-icon"></span>
+    <body>
+        <div class="container-with-background">
+            <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
+            <form class="homepage-search" method="GET" action="searchedCampsite.html">
+                <input type="text" id="search_term" name="search_term" placeholder="Search park by name to work from the wilderness">
+                <button type="submit" id="homepage-search-submit" value="submit">
+                    <span class="search-icon"></span>
             </form>
-      </div>
+        </div>
 
 
       <button data-modal-target="#modal" id="open-modal">Open Modal</button>
@@ -41,5 +40,6 @@
                </div>
             </div>
         <div id="overlay"></div>
+
     </body>
 </html>
