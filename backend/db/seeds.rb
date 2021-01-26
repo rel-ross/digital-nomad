@@ -20,9 +20,9 @@ sites.each do |site|
 Campsite.create(
     name: site["name"], 
     url: site["reservationUrl"], 
-    cellPhoneReception: 
-    showers: 
-    electricalHookups: 
-    location: 
+    cellPhoneReception: site["amenities"]["cellPhoneReception"],
+    showers: site["amenities"]["showers"][0],
+    electricalHookups: (site["campsites"]["electricalHookups"]).to_i,
+    location: site["addresses"][0]
     )
 end
