@@ -331,19 +331,21 @@ span {
    box-shadow:4px 8px 5px rgba(0, 0, 0, 0.8);
    transition: .5s ease;
    display: block;
+   z-index: -1;
 }
 
 .campsite-info-card:hover {
    opacity: .3;
 }
 
-/* .reserve-opacity {
+.reserve-opacity {
    opacity: 0;
    position: relative;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   top: 0%;
+   left: 85%;
+   /* transform: translate(-50%, -50%); */
    text-align: center;
+   z-index: 100;
 }
 
 .reserve-opacity:hover {
@@ -356,7 +358,7 @@ span {
    font-size: 16px;
    padding: 16px 32px;
    
-} */
+}
 
 .campsite-recommender {
    color: white;

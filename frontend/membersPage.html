@@ -3,23 +3,21 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./memberPage.css">
+      <link rel="stylesheet" href="./main.css">
       <script src=""></script>
       <title>Members Page</title>
    </head>
    <body>
-      <div class="dropdown">
-         <button class="dropdown-btn">=</button>
-         <div class="dropdown-content">
-            <a href="./parks.html">Favorites</a>
-            <a href="#">Something</a>
-            <a href="#">Something</a>
-            <a href="#">Something</a>
+      <div class ="nav-header">
+         <div class="left">
+            <a href="index.html"><img class="header-logo" src="assets/park-app-logo-no-border-02.png"></a> 
+            <div class=header-search-bar>
+               <input type="text" id="header-search" name="header-search" placeholder="Try Estes Park, Dinosaur..." />
+               <button type="submit" id="header-search-submit" value="submit">
+                  <span class="search-icon"></span>
+            </div>
          </div>
+         <div class="right">Placeholder so it can be dynamic JS based on if user's logged in</div>
       </div>
-
-
-
-
    </body>
 </html>
