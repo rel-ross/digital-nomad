@@ -9,12 +9,17 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
    .then(campsites => {
       campsites.map(campsite =>{
       let $campsiteInfo = document.createElement("div")
+      imageArray = JSON.parse(campsite.image)
+      $campsiteInfo.style.backgroundImage = `url(${imageArray[0]})`
       $campsiteInfo.innerHTML = `
-      <h1>${campsite.name}</h1>
-      <p>Location: ${campsite.location}</p>
-      <p>Cell Phone Reception: ${campsite.cellPhoneReception}</p>
-      <p>Showers: ${campsite.showers}</p>
-      <p>Number of electrical hookups: ${campsite.electricalHookups}</p>
+      <div class= "campsite-info-card">
+         <h1>${campsite.name}</h1>
+         <p>Location: ${campsite.location}</p>
+         <p>Cell Phone Reception: ${campsite.cellPhoneReception}</p>
+         <p>Showers: ${campsite.showers}</p>
+         <p>Number of electrical hookups: ${campsite.electricalHookups}</p>
+      </div>
+      <div class="campsite-recommender"><h2>Digital Nomad's "Get Shit Done" rating</h2></div>
       `
       return $campsiteInfo
       }).forEach($campsiteInfo => $campsiteSearchResult.append($campsiteInfo))
