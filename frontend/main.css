@@ -60,14 +60,15 @@ body {
    position: fixed;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%) scale(0);
+   transform: translate(-50%, -50%) ;
    transition: 200ms ease-in-out;
    border: 5px solid black;
    border-radius: 10px;
    z-index: 10;
+   background: transparent;
    background-color: #fff;
-   width: 600px;
-   height: 700px;
+   width: 400px;
+   height: 500px;
    max-width: 80%;
 }
 
@@ -75,7 +76,7 @@ body {
    transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-header {
+.model-header {
    padding: 10px 15px;
    display: flex;
    justify-content: space-between;
@@ -109,4 +110,41 @@ body {
 #overlay.active {
    opacity: 1;
    pointer-events: all;
+}
+
+.input {
+   width: 80%;
+   padding: 10px 0;
+   padding-top: 20px;
+   margin: 5px 40px;
+   display: block;
+   border-left: 0;
+   border-top: 0;
+   border-right: 0;
+   border-bottom: 3px solid #000;
+   outline: none;
+   background: transparent;
+}
+
+.submit-btn {
+   width: 80%;
+   padding: 10px 30px;
+   display: block;
+   margin: auto;
+   margin-top: 1rem;
+   border: 0;
+   border-radius: 30px;
+   background: linear-gradient(to left, #EBC518,#60BDDD );
+   font-size: 18px;
+}
+.check-box {
+   margin: 30px 0px 30px 40px;
+}
+
+span {
+   color: #ooo;
+   font-size: 15px;
+   margin-left: 10px;
+   padding-top:27px;
+   position: absolute;
 }
