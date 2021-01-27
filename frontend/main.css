@@ -28,7 +28,8 @@ h1 {
 }
 
 .container-with-background  > .logo {
-    width: 455px;
+    width: 100%;
+    height: 100%;
 }
 
 .homepage-search {
@@ -162,7 +163,7 @@ h1 {
    align-items: center;
 }
 
-.modal-header .close-button {
+.close-button {
    cursor: pointer;
    border: none;
    outline: none;
@@ -261,19 +262,32 @@ h1 {
    background: transparent;
 }
 
+.input[type="text"] {
+   background: transparent;
+}
+
+select {
+   background: transparent;
+}
+
 .submit-btn {
    width: 80%;
    padding: 10px 30px;
    display: block;
    margin: auto;
-   /* margin-top: 1rem; */
    border: 0;
    border-radius: 30px;
    background: linear-gradient(to left, #EBC518,#60BDDD );
    font-size: 18px;
+   cursor: pointer;
 }
+
 .check-box {
    margin: 30px 0px 30px 40px;
+}
+
+#register .submit-btn {
+   margin-top: 9px;
 }
 
 span {

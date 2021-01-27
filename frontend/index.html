@@ -7,8 +7,8 @@
     <script src="./index.js" defer></script>
     <title>Digital Nomad CO Parks</title>
 </head>
-
     <body>
+       
         <div class="container-with-background">
             <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
             <form class="homepage-search" method="GET" action="searchedCampsite.html">
@@ -35,13 +35,13 @@
                         <button type="button" class="toggle-btn" onclick="login()">Login</button>
                         <button type="button" class="toggle-btn" onclick="register()">Register</button>
                      </div>
-                     <form id="login" class="input-group" action="" method="POST">
+                     <form id="login" class="input-group" action="http://localhost:3000/users" method="POST">
                         <input type="text" name="name" placeholder="Name" class="input">
                         <input type="text" name="password" placeholder="Password" class="input">
                         <input type="checkbox" class="check-box"><span>Remember Password</span>
                         <button type="submit" class="submit-btn">Login</button>
                      </form>
-                        <form id="register" method="POST" action="" class="input-group">
+                        <form id="register" method="POST" action="http://localhost:3000/users" class="input-group">
                            <input type="text" name="name" placeholder="Name" class="input">
                            <input type="email" name="name" placeholder="Email" class="input">
                            <input type="text" name="password" placeholder="Password" class="input">
