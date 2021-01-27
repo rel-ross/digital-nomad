@@ -9,6 +9,7 @@
 </head>
 
     <body>
+       <div class="overseeer">
         <div class="container-with-background">
             <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
             <form class="homepage-search" method="GET" action="searchedCampsite.html">
@@ -24,25 +25,35 @@
          <div id="modal" class="modal">
 
             <div class="model-header">
-               <div class="title">Example Modal</div>
+               <div class="title"> </div>
                <button data-close-button class="close-button">&times;</button>
                </div>
             
                <div class="main-box">
                   <div class="form-box">
                      <div class="button-box">
-                        <div class="btn"></div>
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Register</button>
                      </div>
-                  <form id="register" method="POST" action="" class="input-group">
-                     <input type="text" name="name" placeholder="Name" class="input">
-                     <input type="text" name="password" placeholder="Password" class="input">
-                     <input type="checkbox" class="check-box"><span>Remeber Password</span>
-                     <button type="submit" class="submit-btn">Login</button>
-                  </form>
+                     <form id="login" class="input-group" action="" method="POST">
+                        <input type="text" name="name" placeholder="Name" class="input">
+                        <input type="text" name="password" placeholder="Password" class="input">
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Login</button>
+                     </form>
+                        <form id="register" method="POST" action="" class="input-group">
+                           <input type="text" name="name" placeholder="Name" class="input">
+                           <input type="email" name="name" placeholder="Email" class="input">
+                           <input type="text" name="password" placeholder="Password" class="input">
+                           <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                           <button type="submit" class="submit-btn">Register</button>
+                     </form>
                </div>
                </div>
             </div>
         <div id="overlay"></div>
+      </div>
 
     </body>
 </html>

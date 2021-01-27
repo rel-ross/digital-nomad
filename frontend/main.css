@@ -58,12 +58,12 @@ h1 {
     background-position: center;
     padding: 15px;
 }
-/* Modal styling */
+/********************************* Modal styling *******************************************/
 .modal {
    position: fixed;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%) scale(0);
+   transform: translate(-50%, -50%) ;
    transition: 200ms ease-in-out;
    border: 5px solid black;
    border-radius: 10px;
@@ -73,6 +73,7 @@ h1 {
    width: 400px;
    height: 500px;
    max-width: 80%;
+   background: #3E97CF;
 }
 
 .modal.active {
@@ -115,7 +116,109 @@ h1 {
    pointer-events: all;
 }
 
-/* Campsite show page styling */
+.main-box {
+    /* height: 100%; */
+   /* width: 500px;  */
+   top: 50%;
+   left: 50%;
+}
+
+.form-box {
+   width: 400px;
+   height: 400px;
+   position: relative;
+   margin: auto auto;
+   /* overflow: hidden; */
+   /* background color */
+   /* padding */
+}
+
+.button-box {
+   width: 223px;
+   margin: 30px 30px 40px 80px;
+   position: relative;
+   box-shadow: 0px 0px 3px 5px #EBC518;
+   border-radius: 90px;
+}
+
+.toggle-btn {
+   padding: 5px 10px;
+   cursor: pointer;
+   background: transparent;
+   border: 0;
+   outline: none;
+   position: relative;
+}
+
+#btn {
+   top: 0;
+   left: 0;
+   position: absolute;
+   width: 123px;
+   height: 100%;
+   background: linear-gradient(to left,#60BDDD, #EBC518 );
+   border-radius: 90px;
+   transition: 0.5s;
+}
+
+.input-group {
+   top: 180px;
+   position: absolute;
+   width: 280px;
+   transition: 0.5s;
+}
+
+.input {
+   width: 80%;
+   padding: 10px 0;
+   padding-top: 20px;
+   margin: 5px 40px;
+   display: block;
+   border-left: 0;
+   border-top: 0;
+   border-right: 0;
+   border-bottom: 3px solid #000;
+   outline: none;
+   background: transparent;
+}
+
+.submit-btn {
+   width: 80%;
+   padding: 10px 30px;
+   display: block;
+   margin: auto;
+   /* margin-top: 1rem; */
+   border: 0;
+   border-radius: 30px;
+   background: linear-gradient(to left, #EBC518,#60BDDD );
+   font-size: 18px;
+}
+.check-box {
+   margin: 30px 0px 30px 40px;
+}
+
+span {
+   color: #000000;
+   font-size: 15px;
+   margin-left: 10px;
+   padding-top:27px;
+   position: absolute;
+}
+
+#login {
+   left: 0;
+}
+
+#register {
+   left: 450px;
+}
+
+.overseeer {
+   height: 100%;
+   width: 100%;
+}
+
+/**************************** Campsite show page styling **************************************/
 .campsite-search-result > div {
    background-repeat: no-repeat;
    background-position: 25% 25%;
@@ -140,39 +243,8 @@ h1 {
 .campsite-recommender {
    color: white;
 }
-.input {
-   width: 80%;
-   padding: 10px 0;
-   padding-top: 20px;
-   margin: 5px 40px;
-   display: block;
-   border-left: 0;
-   border-top: 0;
-   border-right: 0;
-   border-bottom: 3px solid #000;
-   outline: none;
-   background: transparent;
-}
 
-.submit-btn {
-   width: 80%;
-   padding: 10px 30px;
-   display: block;
-   margin: auto;
-   margin-top: 1rem;
-   border: 0;
-   border-radius: 30px;
-   background: linear-gradient(to left, #EBC518,#60BDDD );
-   font-size: 18px;
-}
-.check-box {
-   margin: 30px 0px 30px 40px;
-}
 
-span {
-   color: #000000;
-   font-size: 15px;
-   margin-left: 10px;
-   padding-top:27px;
-   position: absolute;
-}
+
+
+
