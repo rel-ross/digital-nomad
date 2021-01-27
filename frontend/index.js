@@ -2,9 +2,9 @@ const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
-const center = document.getElementById('btn');
-const left = document.getElementById('login');
-const right = document.getElementById('register');
+const A = document.getElementById('login');
+const B = document.getElementById('register');
+const C = document.getElementById('btn');
 
 openModalButtons.forEach( button => {
    button.addEventListener('click', () => {
@@ -39,15 +39,15 @@ function closeModal(modal) {
 };
 
 function login() {
-   center.style.left = "0px"
-   left.style.left = "450px"
-   right.style.left = "50"
+   A.style.left = "0px"
+   B.style.left = "500px"
+   C.style.left = "0px"
 };
 
 function register() {
-   center.style.left = "100px"
-   left.style.left = "50px"
-   right.style.left = "-450"
+   A.style.left = "500px"
+   B.style.left = "0px"
+   C.style.left = "100px"
 }
 
 

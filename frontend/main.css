@@ -125,7 +125,7 @@ h1 {
    position: fixed;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%) ;
+   transform: translate(-50%, -50%) scale(0);
    transition: 200ms ease-in-out;
    border: 5px solid black;
    border-radius: 10px;
@@ -190,7 +190,7 @@ h1 {
    height: 400px;
    position: relative;
    margin: auto auto;
-   /* overflow: hidden; */
+   overflow: hidden;
    /* background color */
    /* padding */
 }
@@ -224,7 +224,8 @@ h1 {
 }
 
 .input-group {
-   top: 180px;
+   top: 90px;
+   padding-left: 50px;
    position: absolute;
    width: 280px;
    transition: 0.5s;
