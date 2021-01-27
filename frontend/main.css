@@ -20,14 +20,13 @@ h1 {
     margin: -10px;
 }
 
-.logo {
+.container-with-background  > .logo {
     width: 455px;
 }
 
 .homepage-search {
    padding: 48px 0px;
     display: flex;
-    /* flex-direction: column; */
 }
 
 .homepage-search #search_term {
@@ -51,14 +50,77 @@ h1 {
     margin: 10px 0px;
     background-color: #ECC51B;
     border-left: none;
-}
-.search-icon {
     background-image: url("assets/icons/magnifying-glass-03.png");
     background-repeat: no-repeat;
     background-position: center;
-    padding: 15px;
 }
-/********************************* Modal styling *******************************************/
+
+/* header navigation */
+.nav-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   height: 30px;
+   width: 100%;
+   background-color: #fff;
+   z-index: 110;
+   padding-top:30px
+}
+
+.nav-header .left {
+   margin-left: 30px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-items: stretch;
+}
+.header-search-bar {
+   margin: 15px 0 0 30px;
+   display: flex;
+   flex-direction: row;
+}
+
+#header-search {
+   height: 42px;
+   width: 20em;
+   border-radius: 5px 0px 0px 5px;
+   border-width: thin;
+   border-right: none;
+   border-color: rgba(0, 0, 0, 0.2);
+   text-align: left;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+}
+
+#header-search-submit {
+   border-radius: 0px 5px 5px 0px;  
+   border-width: thin;
+   border-left: none;
+   border-color: rgba(0, 0, 0, 0.2);
+   height: 46px;
+   width: 42px;
+   background-color: #ECC51B;
+   border-left: none;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   background-image: url("assets/icons/magnifying-glass-03.png");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.nav-header .right {
+   margin-right: 30px;
+
+}
+
+.nav-header .header-logo {
+   height: 62px;
+}
+
+/* Modal styling */
+
 .modal {
    position: fixed;
    top: 50%;
