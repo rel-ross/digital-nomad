@@ -9,17 +9,16 @@
 </head>
 
     <body>
-       <div class="overseeer">
         <div class="container-with-background">
             <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
             <form class="homepage-search" method="GET" action="searchedCampsite.html">
                 <input type="text" id="search_term" name="search_term" placeholder="Search by city to start working from the wilderness">
                 <button type="submit" id="homepage-search-submit" value="submit"></button>
             </form>
+            <button data-modal-target="#modal" id="open-modal" class="openModal">Login/Register</button>
         </div>
 
 
-      <button data-modal-target="#modal" id="open-modal">Open Modal</button>
 
          <div id="modal" class="modal">
 
@@ -52,7 +51,6 @@
                </div>
             </div>
         <div id="overlay"></div>
-      </div>
 
     </body>
 </html>

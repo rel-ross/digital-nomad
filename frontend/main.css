@@ -142,6 +142,11 @@ h1 {
    transform: translate(-50%, -50%) scale(1);
 }
 
+.openModal {
+   /* margin-bottom: 500px; */
+   /* padding-bottom: 100px; */
+}
+
 .model-header {
    padding: 10px 15px;
    display: flex;
@@ -205,11 +210,13 @@ h1 {
 
 .toggle-btn {
    padding: 5px 10px;
+   margin-left: 30px;
    cursor: pointer;
    background: transparent;
    border: 0;
    outline: none;
    position: relative;
+   font-size: 15px;
 }
 
 #btn {
@@ -224,7 +231,7 @@ h1 {
 }
 
 .input-group {
-   top: 90px;
+   top: 110px;
    padding-left: 50px;
    position: absolute;
    width: 280px;
@@ -276,10 +283,6 @@ span {
    left: 450px;
 }
 
-.overseeer {
-   height: 100%;
-   width: 100%;
-}
 
 /**************************** Campsite show page styling **************************************/
 .campsite-search-result > div {
