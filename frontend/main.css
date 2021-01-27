@@ -101,6 +101,7 @@ h1 {
    text-align: left;
    font-family: 'Roboto', sans-serif;
    font-size: 18px;
+   padding-left: 15px;
 }
 
 #header-search-submit {
@@ -320,19 +321,51 @@ span {
    align-items: flex-end;
 }
 
+
 .campsite-info-card {
    background-color: white;
    color: black;
-   width: 40%;
-   margin: 150px 100px;
-   padding: 20px;
-   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2)
+   width: 50%;
+   margin: 100px 100px;
+   padding: 10px 30px;
+   box-shadow:4px 8px 5px rgba(0, 0, 0, 0.8);
+   transition: .5s ease;
+   display: block;
 }
+
+.campsite-info-card:hover {
+   opacity: .3;
+}
+
+/* .reserve-opacity {
+   opacity: 0;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.reserve-opacity:hover {
+   opacity: 1;
+}
+.reserve-text {
+   position: absolute;
+   background-color: #4CAF50;
+   color: white;
+   font-size: 16px;
+   padding: 16px 32px;
+   
+} */
 
 .campsite-recommender {
    color: white;
 }
 
+a#campsite-url {
+   text-decoration: none;
+   color: black;
+}
 
 
 
