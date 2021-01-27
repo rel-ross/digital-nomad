@@ -10,15 +10,20 @@ h1 {
 }
 .container-with-background {
     background-image: url("./assets/RMNP-background.jpg");
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    width: auto;
+    height: auto;
     display: flex;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
     flex-direction: column;
     align-items: center;
     padding: 150px 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 0;
+    background-position: center;
     margin: -10px;
 }
 
@@ -30,6 +35,7 @@ h1 {
 .homepage-search {
    padding: 48px 0px;
     display: flex;
+
 }
 
 .homepage-search #search_term {
@@ -130,7 +136,7 @@ h1 {
    left: 50%;
    transform: translate(-50%, -50%) scale(0);
    transition: 200ms ease-in-out;
-   border: 5px solid black;
+   border: 2px solid black;
    border-radius: 10px;
    z-index: 10;
    background: transparent;
@@ -138,7 +144,7 @@ h1 {
    width: 400px;
    height: 500px;
    max-width: 80%;
-   background: #3E97CF;
+   /* background: #3E97CF; */
 }
 
 .modal.active {
@@ -177,7 +183,8 @@ h1 {
    top: 0;
    left: 0;
    right: 0;
-   bottom: 0;background-color: rgba(0, 0, 0, 0.5);
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5);
    pointer-events: none;
 }
 
@@ -250,7 +257,7 @@ h1 {
    border-left: 0;
    border-top: 0;
    border-right: 0;
-   border-bottom: 3px solid #000;
+   border-bottom: 1px solid #000;
    outline: none;
    background: transparent;
 }
