@@ -18,10 +18,11 @@ class UsersController < ApplicationController
    if
     @user = User.create(name: params[:name],
     password: params[:password])
+   #  render json: @user
    
-      redirect_to "http://localhost:3001/campsites.html"
-   else
-      redirect_to "http://localhost:3001/"
+      redirect_to "http://localhost:3001/membersPage.html"
+   # else
+   #    redirect_to "http://localhost:3001/"
    end
 
 
