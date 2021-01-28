@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
 
-    render json: @user
+    redirect_to "http://localhost:3001/membersPage.html"
   end
 
   # POST /usersp
