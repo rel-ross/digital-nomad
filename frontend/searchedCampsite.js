@@ -15,7 +15,7 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
       <a id= "campsite-url" href="${campsite.url}"> 
       <div id="campsite-info-card" class= "campsite-info-card">
             <h1>${campsite.name}</h1>
-            <p>Location: ${campsite.location}</p>
+            <p>Location: ${locationStyling(campsite)}</p>
             <p>Cell Phone Reception: ${campsite.cellPhoneReception}</p>
             <p>Showers: ${campsite.showers}</p>
             <p>Number of electrical hookups: ${campsite.electricalHookups}</p>
@@ -50,4 +50,9 @@ function recommenderPercent(campsite) {
       recommended -= 20
    }
    return recommended
+}
+
+function locationStyling(campsite) {
+   return campsite.location.replace(/([A-Z])/g, ' $1').trim()
+ 
 }
