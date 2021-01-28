@@ -23,4 +23,4 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
       `
       return $campsiteInfo
       }).forEach($campsiteInfo => $campsiteSearchResult.append($campsiteInfo))
-   })
+   });
