@@ -10,7 +10,7 @@
     <body>
        
         <div class="container-with-background">
-            <img class="flex-direction: column;" src="assets/park-app-logo-02.png">
+            <img class="homepage-logo" src="assets/park-app-logo-02.png">
             <form class="homepage-search" method="GET" action="searchedCampsite.html">
                 <input type="text" id="search_term" name="search_term" placeholder="Search by city to start working from the wilderness">
                 <button type="submit" id="homepage-search-submit" value="submit"></button>
@@ -35,7 +35,7 @@
                         <button type="button" class="toggle-btn" onclick="login()">Login</button>
                         <button type="button" class="toggle-btn" onclick="register()">Register</button>
                      </div>
-                     <form id="login" class="input-group" action="http://localhost:3000/users" method="GET">
+                     <form id="login" class="input-group" method="GET" action="http://localhost:3001/membersPage.html" + `${id}`>
                         <input type="text" name="name" placeholder="Name" class="input">
                         <input type="text" name="password" placeholder="Password" class="input">
                         <input type="checkbox" class="check-box"><span>Remember Password</span>
