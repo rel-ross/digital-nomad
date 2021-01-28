@@ -24,7 +24,7 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
          </div>
          </a>  
          <div class="campsite-recommender"><h2>Digital Nomad's "Get Shit Done" rating</h2></div>
-         
+         <div class="reserve-opacity"><div class="reserve-text">Reserve</div></div>
       `
 
       return $campsiteInfo
