@@ -13,13 +13,14 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
       $campsiteInfo.style.backgroundImage = `url(${imageArray[0]})`
       $campsiteInfo.innerHTML = `
       <a id= "campsite-url" href="${campsite.url}"> 
-      <div class= "campsite-info-card">
+      <div id="campsite-info-card" class= "campsite-info-card">
             <h1>${campsite.name}</h1>
             <p>Location: ${campsite.location}</p>
             <p>Cell Phone Reception: ${campsite.cellPhoneReception}</p>
             <p>Showers: ${campsite.showers}</p>
             <p>Number of electrical hookups: ${campsite.electricalHookups}</p>
-            <div class="reserve-opacity"><div class="reserve-text">Reserve</div></div>
+            <div id="reserve-text" class="reserve-text">Reserve</div>
+            <div class="reserve-opacity"></div>
          </div>
          </a>  
          <div class="campsite-recommender"><h2>Digital Nomad's "Get Shit Done" rating</h2></div>
