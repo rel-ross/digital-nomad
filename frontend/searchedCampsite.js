@@ -25,7 +25,7 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
          </a>  
          <div class="campsite-recommender">
             <h2>Get It Done</h2>
-            <h2>rating</h2>
+            <h2>Rating</h2>
             <h1>${recommenderPercent(campsite)}%</h1>
          </div>
          <div class="reserve-opacity"><div class="reserve-text">Reserve</div></div>
