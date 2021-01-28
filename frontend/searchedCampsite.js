@@ -16,23 +16,20 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
       }
       if (campsite.cellPhoneReception.length > 0) {
          $campsiteInfo.innerHTML = `
-         <a id= "campsite-url" href="${campsite.url}"> 
          <div id="campsite-info-card" class= "campsite-info-card">
                <h1>${campsite.name}</h1>
                <p>Location: ${locationStyling(campsite)}</p>
                <p>Cell Phone Reception: ${campsite.cellPhoneReception}</p>
                <p>Showers: ${campsite.showers}</p>
                <p>Number of electrical hookups: ${campsite.electricalHookups}</p>
-               <div id="reserve-text" class="reserve-text">Reserve</div>
+               <a href="${campsite.url}" id= "campsite-url"><div id="reserve-text" class="reserve-text">Reserve</div></a>
                <div class="reserve-opacity"></div>
             </div>
-            </a>  
             <div class="campsite-recommender">
                <h2>Get It Done</h2>
                <h2>Rating</h2>
                <h1>${recommenderPercent(campsite)}%</h1>
             </div>
-            <div class="reserve-opacity"><div class="reserve-text">Reserve</div></div>
          `
       }
       return $campsiteInfo

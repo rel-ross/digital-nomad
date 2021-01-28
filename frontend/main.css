@@ -359,7 +359,7 @@ span {
 .campsite-info-card {
    background-color: white;
    color: black;
-   width: 50%;
+   width: 30%;
    margin: 100px 100px;
    padding: 10px 30px;
    box-shadow:4px 8px 5px rgba(0, 0, 0, 0.8);
@@ -385,21 +385,23 @@ span {
 .reserve-text {
    position: relative;
    display: inline-block;
-   bottom: 11rem;
+   bottom: 0rem;
    left: 9rem;
-   background-color: #4CAF50;
+   background-color:#3A9DA0;
    color: white;
-   font-size: 16px;
-   padding: 16px 32px;
-   opacity: 0;
-}
-
-#campsite-info-card:hover #reserve-text {
-   opacity: 0.4;
+   font-size: 18px;
+   padding: 12px 28px;
+   opacity: 1;
+   border-color: #3A9DA0;
+   border-style: solid;
+   margin: 1rem 0 1rem 0;
 }
 
 #campsite-info-card:hover #reserve-text:hover {
    opacity: 1;
+   background-color: #ECC51B;
+   border-color: #3A9DA0;
+   border-style: solid;
 }
 
 .campsite-recommender {
