@@ -135,6 +135,15 @@ h1 {
    margin-left: 25px;
 }
 
+.right a {
+   text-decoration: none;
+}
+
+.right a:hover {
+   text-decoration: none;
+   color: #ECC51B;
+}
+
 .nav-header .header-logo {
    height: 62px;
 }
@@ -171,6 +180,7 @@ h1 {
    border-radius: 5px;
    border-width: thin;
    transition: 200ms ease-in-out;
+   background-color:white;
 }
 
 #open-modal:hover {
