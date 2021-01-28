@@ -9,7 +9,7 @@ h1 {
    font-size: 48px;
 }
 .container-with-background {
-    background-image: url("./assets/RMNP-background.jpg");
+    background-image: url("https://s3.amazonaws.com/iexplore_web/images/assets/000/005/613/original/dreamstime_m_31806864.jpg?1442894378");
     position: fixed;
     width: auto;
     height: auto;
@@ -332,7 +332,7 @@ span {
 /**************************** Campsite show page styling **************************************/
 .campsite-search-result > div {
    background-repeat: no-repeat;
-   background-position: 25% 25%;
+   background-position: 0% 25%;
    opacity: 0.75;
    width: 100%;
    /* padding:150px 100px; */
@@ -340,6 +340,9 @@ span {
    display: flex;
    justify-content: space-around;
    align-items: flex-end;
+   background-size: cover;
+   background-position: center;
+   overflow-x: hidden; 
 }
 
 

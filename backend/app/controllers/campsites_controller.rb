@@ -3,7 +3,8 @@ class CampsitesController < ApplicationController
   def index
     if params[:search_term]
       @campsites = Campsite.where(
-        location: params[:search_term]
+        "location LIKE :search_term",
+        search_term: "%#{params[:search_term]}%"
       )
     else
       @campsites = Campsite.all
