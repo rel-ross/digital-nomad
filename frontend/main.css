@@ -122,7 +122,13 @@ h1 {
 
 .nav-header .right {
    margin-right: 30px;
+   display: flex;
+   flex-direction: row
+}
 
+.right li {
+   list-style: none;
+   margin-left: 25px;
 }
 
 .nav-header .header-logo {
@@ -339,11 +345,11 @@ span {
 }
 
 .reserve-opacity {
-   opacity: 0;
+   opacity: 1;
    position: relative;
    top: 0%;
-   left: 85%;
-   /* transform: translate(-50%, -50%); */
+   left: 0;
+   transform: translate(50%, 50%);
    text-align: center;
    z-index: 100;
 }

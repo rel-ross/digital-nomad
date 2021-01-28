@@ -19,11 +19,10 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
             <p>Cell Phone Reception: ${campsite.cellPhoneReception}</p>
             <p>Showers: ${campsite.showers}</p>
             <p>Number of electrical hookups: ${campsite.electricalHookups}</p>
-            <div class="reserve-opacity"><div class="reserve-text">Reserve</div></div>
          </div>
          </a>  
          <div class="campsite-recommender"><h2>Digital Nomad's "Get Shit Done" rating</h2></div>
-         
+         <div class="reserve-opacity"><div class="reserve-text">Reserve</div></div>
       `
 
       return $campsiteInfo

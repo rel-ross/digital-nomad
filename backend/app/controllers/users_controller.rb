@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update, :destroy]
 
   # GET /users
   def index
@@ -10,17 +9,19 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
+    @user = User.find(params[:id])
+
     render json: @user
   end
 
-  # POST /users
+  # POST /usersp
   def create
-   if
     @user = User.create(name: params[:name],
     password: params[:password])
+    @user_id = @user[:id]
    #  render json: @user
    
-      redirect_to "http://localhost:3001/membersPage.html"
+      redirect_to "http://localhost:3001/membersPage.html?user_id=#{@user_id}"
    # else
    #    redirect_to "http://localhost:3001/"
    end
@@ -45,15 +46,3 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
   end
-
-  private
-    def user_params
-      
-      # @user = User.find(params[:id])
-    end
-
-    # Only allow a list of trusted parameters through.
-    def user_params
-      params.require(:user).permit(:name, :password)
-    end
-end
