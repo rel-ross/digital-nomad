@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
 
-    redirect_to "http://localhost:3001/membersPage.html"
+    render json: @user
   end
 
   # POST /usersp
@@ -25,7 +25,6 @@ class UsersController < ApplicationController
    # else
    #    redirect_to "http://localhost:3001/"
    end
-
 
 
    #  if @user.save
