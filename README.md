@@ -10,11 +10,11 @@ Working in the wilderness
   <li>Features</li>
   <li>Unfinished Features</li>
   <li>Contact</li>
-  <li>License</li>
 </ul>
 
 # General Info
 Digital Nomad is an app to help those who are working on the open road find campsites with the proper accomodations.
+
 # Intro Video
 Placeholder
 
