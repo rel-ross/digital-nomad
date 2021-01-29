@@ -12,7 +12,7 @@ fetch("http://localhost:3000/users/16")
 function showInfo(user) {
     const $userInfo = document.createElement("div")
     $userInfo.innerHTML = `
-    <h1> Hi there, ${user.name}</h1>
+    <h1> Hi there, human</h1>
     `
     $userInfoContainer.append($userInfo)
 }

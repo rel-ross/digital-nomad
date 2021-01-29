@@ -15,6 +15,8 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
          $campsiteInfo.style.backgroundImage = `url("https://www.nps.gov/common/uploads/structured_data/94F1598C-9D30-83AC-320C2F832718EFFE.jpg")`
       }
       if (campsite.cellPhoneReception.length > 0) {
+         const reserveURL = campsite.url
+         console.log(reserveURL)
          $campsiteInfo.innerHTML = `
          <div id="campsite-info-card" class= "campsite-info-card">
                <h1>${campsite.name}</h1>
@@ -22,7 +24,7 @@ fetch(`http://localhost:3000/campsites?search_term=${search_term}`)
                <p>Cell Phone Reception: ${campsite.cellPhoneReception}</p>
                <p>Showers: ${campsite.showers}</p>
                <p>Number of electrical hookups: ${campsite.electricalHookups}</p>
-               <a href="${campsite.url}" id= "campsite-url"><div id="reserve-text" class="reserve-text">Reserve</div></a>
+               <a href="${reserveURL}" id= "campsite-url" target="_blank"><div id="reserve-text" class="reserve-text">Reserve</div></a>
                <div class="reserve-opacity"></div>
             </div>
             <div class="campsite-recommender">
