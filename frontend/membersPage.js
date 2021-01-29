@@ -1,9 +1,8 @@
-console.log("working")
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
 
 const $userInfoContainer = document.querySelector(".user-info-container")
-fetch(`http://localhost:3000/users/${id}`)
+fetch("http://localhost:3000/users/16")
     .then(response => response.json())
     .then(user => {
         console.log(user)
